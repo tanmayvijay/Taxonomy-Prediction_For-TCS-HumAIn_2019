@@ -137,7 +137,8 @@ To test the model, we can use *Test_new.npz* that we created during the **data s
    * Remove Stop words from it
    * Stem the remaining words
    * Join the words again to form a string
-   * Save the new modified dataset. 
+* Save the new modified dataset.
+
 * Apply binary Count Vectorizer on Tags
 * Apply Count Vectorizer on Text    
 
@@ -151,3 +152,9 @@ To test the model, we can use *Test_new.npz* that we created during the **data s
 #### Testing
 * Test different models on data.
 * Select the best performance model
+
+
+# Thanks for reading
+##### A big thanks to everyone who took their time to view my project.
+#### A special thanks to TCS HumAIn team for giving me this opprtunity to learn and explore new skills required to tackle real world projects.
+##### Challanges are healty for our brains and specially for data scientist. There is so much to learn, and every step and every opportunity makes us better than ourselves.
