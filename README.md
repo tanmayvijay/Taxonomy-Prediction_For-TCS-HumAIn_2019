@@ -89,3 +89,65 @@ To test the model, we can use *Test_new.npz* that we created during the **data s
 * Once the model is trained, we can test it using last cell of the notebook or using script *6_test_model.py* (recommended).
 ###### NOTE: Make sure that *Test_new.npz is in *data/* directory.* 
 
+</br>
+</br>
+</br>
+
+## Algorithm {Pseudo Code}
+###### I have created this project for Idea Submission round at TCS HumAIn 2019. The dataset and Problem description is provided by TCS team. So, a big Thanks to everyone at TCS.
+
+### This Project includes basically 6 big steps:
+1. Data Exploration 
+2. Data Cleaning and Data Engineering Part-1
+3. Data Engineering Part-2
+4. Tokenize + Remove Stop words + Stemming + Vectorizing 
+5. Training
+6. Testing
+
+</br>
+
+#### Data Exploration
+* Check for all NaN values in data.
+* Plot tags frequency.
+* Check how tags are distributed among question.
+* Obtain Conclusion and Strategize next steps. 
+
+
+#### Data Cleaning and Data Engineering Part-1
+* Remove unnecessary features from data [Id].
+* Drop all rows where Tags column is NaN. 
+* Select Most Frequent 500 tags.
+   * Create a list of top 500 tags.
+   * Find indices of examples containing all tags as a subset of top 500 tags.
+* Sample 500,000 indices from list of indices obtained from previous step.
+* Sample the training set using those indices and save.
+
+
+#### Data Engineering Part-2
+* Using Regular Expression, clean all the Titles in the Title column.
+* Separate Code part from the Body and put into Code column.
+* Clean Body column using Regular Expression.
+* Similarly, clean Code Column.
+* Create new Data Frame by adding Title, Body and Code columns, separated by space into a single column.
+
+
+#### Tokenize + Remove Stop words + Stemming + Vectorizing
+* Loop through all the 500,000 examples:
+   * Tokenize the text
+   * Remove Stop words from it
+   * Stem the remaining words
+   * Join the words again to form a string
+   * Save the new modified dataset. 
+* Apply binary Count Vectorizer on Tags
+* Apply Count Vectorizer on Text    
+
+
+#### Training
+* Train Stochastic Gradient Descent model.
+* Train Support Vector Classifier.
+* Train Logistic Regression Classifier.
+
+
+#### Testing
+* Test different models on data.
+* Select the best performance model
