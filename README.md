@@ -157,4 +157,4 @@ To test the model, we can use *Test_new.npz* that we created during the **data s
 # Thanks for reading
 ##### A big thanks to everyone who took their time to view my project.
 #### A special thanks to TCS HumAIn team for giving me this opprtunity to learn and explore new skills required to tackle real world projects.
-##### Challanges are healty for our brains and specially for data scientist. There is so much to learn, and every step and every opportunity makes us better than ourselves.
+##### Challanges are healty for our brains and specially for data scientist. There is so much to learn, and every step and every opportunity makes us better than yesterday.
